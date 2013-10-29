@@ -1,0 +1,118 @@
+/** 外卖详情页面 **/
+a:link,a:visited { 
+	color : #fff;
+}
+#bus-post {
+	padding : 0 15px;
+}
+#bus-info {
+	border-bottom : 1px solid #ddd;
+	margin-bottom : 10px;
+	padding-bottom : 10px;
+}
+#bus-info li{
+	line-height : 1.5em;
+}
+#bus-info li:last-child {
+	font-size : 12px;
+	text-align : justify;
+}
+.tel {
+	display : inline-block;
+	line-height : 30px;
+	padding : 0 5px;
+	background : #99CCFF;
+	color : #fff;
+	margin : 5px 10px 5px 0;
+	width : 60px;
+	text-align : center;
+}
+
+.take_out-menu li{
+	margin-right : 10px;
+}
+
+.take_out-menu {
+	text-align : left;
+	overflow : hidden;
+	margin-bottom : 15px;
+}
+.take_out-menu li {
+	background-color : #eee;
+	color: #666;
+	
+	display: inline-block;
+	border: 1px #ddd solid;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	font-size: 12px;
+	height: 24px;
+	line-height: 24px;
+	padding: 0 5px;
+	margin-top: 8px;
+	font-family: verdana;
+}
+
+.take_out-box h2 {
+	font : bold 20px "arial";
+	text-align : center;
+	letter-spacing : 5px;
+	color: #fff;
+	text-shadow : 1px 0 3px #000;
+	margin-bottom : 10px;
+}
+.take_out-nav {
+	display : -webkit-box;
+	display : box;
+	margin-bottom : 10px;
+}
+.take_out-nav a {
+	background-color : #aaa;
+	box-shadow : inset 1px 0 3px #777 ,inset 0 1px 3px #777;
+	-webkie-box-shadow : inset 1px 0 3px #777 ,inset 0 1px 3px #777;
+	display : block;
+	text-align : center;
+	color : #fff;
+	padding : 5px 0;
+}
+a.ton1 ,
+.ton1 h3:before {
+	background-color : #99CC33;
+	box-shadow : none;
+}
+a.ton2 ,
+.ton2 h3:before {
+	background-color : #FF9900;
+	box-shadow : none;
+}
+a.ton3 ,
+.ton3 h3:before {
+	background-color : #FF6666;
+	box-shadow : none;
+}
+a.ton4 ,
+.ton4 h3:before {
+	background-color : #CC3399;
+	box-shadow : none;
+}
+
+.take_out-content {
+	overflow : hidden;
+}
+.take_out-content > li {
+	border-bottom : 1px dashed #ddd;
+	margin-bottom : 10px;
+}
+.take_out-content > li:last-child {
+	border-bottom : none;
+}
+.take_out-content h3 {
+	color : #aaa;
+	padding-bottom : 5px;
+}
+.take_out-content h3:before {
+	content : ".";
+	padding : 0 3px;
+	color : transparent;
+	margin-right : 5px;
+}

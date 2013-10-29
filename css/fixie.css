@@ -1,0 +1,31 @@
+body {
+	overflow : hidden;
+}
+#fixie {
+	position : absolute;
+	width : 100%;
+	height : 100%;
+	background-color : #fff;
+	top : 0;
+	left : 0;
+	z-index : 99999;
+	text-align : center;
+	display : block;
+}
+
+#fixie p {
+	font : 16px/35px "微软雅黑",arial;
+	margin-bottom : 25px;
+}
+
+#fixie .lp{
+	color : #777;
+}
+
+#liantu img{
+	width : 150px;
+	height : 150px;
+}
+#liantu p{
+	margin-bottom : 5px;
+}

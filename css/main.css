@@ -1,0 +1,271 @@
+/*
+	*   YUI reset.css
+	*/
+	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+	form,fieldset,input,textarea,p,blockquote,th,td {
+	padding: 0;
+	margin: 0;
+	}
+	table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+	fieldset,img {
+	border: 0;
+	}
+	address,caption,cite,code,dfn,em,strong,th,var {
+	font-weight: normal;
+	font-style: normal;
+	}
+	ol,ul {
+	list-style: none;
+	}
+	caption,th {
+	text-align: left;
+	}
+	h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+	font-size: 100%;
+	}
+	q:before,q:after {
+	content:'';
+	}
+	abbr,acronym { border: 0;}
+	
+.clearfix:after{content:"";display:table;clear : both;}
+a{text-decoration:none;}
+a:link,a:visited { 
+	color : #000;
+}
+.none {display : none;}
+
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url('./fontello.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+.icon-search:before { content: '\e803'; } /* '' */
+.icon-briefcase:before { content: '\e809'; } /* '' */
+.icon-phone:before { content: '\e80c'; } /* '' */
+.icon-down-big:before { content: '\e80e'; } /* '' */
+.icon-up-big:before { content: '\e80f'; } /* '' */
+.icon-table:before { content: '\e80d'; } /* '' */
+.icon-suitcase:before { content: '\e805'; } /* '' */
+.icon-sitemap:before { content: '\e804'; } /* '' */
+.icon-chat:before { content: '\e80b'; } /* '' */
+.icon-user:before { content: '\e807'; } /* '' */
+.icon-user-add:before { content: '\e801'; } /* '' */
+.icon-chart-bar:before { content: '\e80a'; } /* '' */
+.icon-users:before { content: '\e808'; } /* '' */
+.icon-bus:before { content: '\e802'; } /* '' */
+.icon-edit-alt:before { content: '\e800'; } /* '' */
+.icon-food:before { content: '\e806'; } /* '' */
+
+
+/* 头部  */	
+#top {
+	width : 100%;
+	height : 50px;
+	line-height : 50px;
+	background : #000;
+	margin-bottom : 15px;
+	display:box;
+	display:-webkit-box;
+	display:-moz-box;
+}
+#top > div {
+	text-align : center;
+}
+
+#back {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	width: 60px;
+	padding : 0 10px;
+	background: #C5C5C5;
+	-webkit-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+	-webkit-box-shadow: inset 0 1px 1px 1px #D8D8D8;
+	border: 1px solid #999;
+	position : relative;
+	color : #fff;
+	font-weight : bold;
+	text-align : left;
+	margin-left : 10px;
+}
+#back:after {
+	content :'';
+	width : 0;
+	height : 0;
+	border : 17px solid #000;
+	border-left-color : transparent;
+	position : absolute;
+	top : -2px;
+	right : -2px;
+	z-index : 99;
+}
+#title{
+	font : bold 1.2em "微软雅黑";
+	color : #fff;
+	line-height : 50px;
+	margin-left : -20px; /* 修正返回长度多出20px造成不居中 */
+}
+#home{
+	background: #C5C5C5;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	width: 60px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #999;
+	-webkit-box-shadow: inset 0 1px 1px 1px #D8D8D8;
+	text-align : center;
+	color : #fff;
+	font-weight : bold;
+	margin-right : 10px;
+}
+
+	.flexbox {
+		display: -webkit-box;
+		display: box;
+	}
+	
+	.span1 {
+		-webkit-box-flex:1;
+		box-flex:1;
+	}
+	.span2 {
+		-webkit-box-flex : 2;
+		box-flex : 2;
+	}
+	.span3 {
+		-webkit-box-flex : 3;
+		box-flex : 3;
+	}
+	.span4 {
+		-webkit-box-flex:4;
+		box-flex:4;
+	}
+	.span5 {
+		-webkit-box-flex:5;
+		box-flex:5;
+	}
+	.span6 {
+		-webkit-box-flex:6;
+		box-flex:6;
+	}
+	.span7 {
+		-webkit-box-flex:7;
+		box-flex:7;
+	}
+	.span8 {
+		-webkit-box-flex:8;
+		box-flex:8;
+	}
+	
+	.fixj {
+		display : inline-block;
+		width : 100%;
+		height : 0;
+		overflow : hidden;
+	}
+	
+	.fadeIn {
+		-webkit-animation:fadeIn .8s 0 ease both;
+	}
+	
+	@-webkit-keyframes fadeIn{
+		0%{
+			opacity:0;
+			-webkit-transform:translateX(20px);
+			height : 0;
+		}
+		100%{
+			opacity:1;
+			-webkit-transform:translateX(0);
+			height : 100%;
+		}
+	}
+	
+	.fadeOut {
+		-webkit-animation:fadeOut .4s 0 ease both;
+	}
+	
+	@-webkit-keyframes fadeOut{
+		0%{
+			opacity:1;
+			-webkit-transform:translateX(0);
+			height : 100%;
+		}
+		100%{
+			opacity:0;
+			-webkit-transform:translateX(20px);
+			height : 0;
+		}
+	}
+	
+	.tarr,
+	.rarr,
+	.barr {
+		position: relative;
+	}
+	.tarr:before ,
+	.rarr:before ,
+	.barr:before {
+		content : " ";
+		border : 2px solid #fff;
+		border-bottom-color : transparent;
+		border-left-color : transparent;
+		height : 6px;
+		width : 6px;
+		-webkit-transform : rotate(45deg);
+		transform : rotate(45deg);
+		position : absolute;
+		top : 20px;
+		right : 16px;
+	}
+	.tarr:before {
+		-webkit-transform : rotate(135deg);
+		transform : rotate(135deg);
+	}
+	.barr:before {
+		-webkit-transform : rotate(-45deg);
+		transform : rotate(-45deg);
+	}
