@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>客服小青，青团网壹号客服</title>
+<meta name="keywords" content="客服小青" />
+<meta name="description" content="客服小青" />
+<link href="http://www.xiaojo.com/css.css" rel="stylesheet" type="text/css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+</head>
+<body OnLoad="f();" onkeydown="down(event.keyCode)">
+<div class="container">
+	<div class="main">
+        
+         <div id="result">
+			<div class="demobot">小青：您好,我是小青!我是机器人哦~~
+		</div>
+        <div class="demobot"></div>
+		</div>
+        <div>
+				<input type="text" name="text" id="text" />
+				<input type="button" value="发送" id="btn" onclick="javascript:chat();" />
+		</div>
+	</div>    
+	<div class="right">
+		<div class="avatar">
+		 <img src="http://youngt.com/img/qrcode.jpg"  alt="小青" />
+		</div>
+        <div class="notice">
+       <br><br><br>
+         <img src="http://pic.youngt.com/static/css/i/logo-footer.gif" alt="小青" />
+        </div>
+
+	</div>
+</div>
+<div>
+<script type="text/javascript">
+function down(code)
+{
+	if(code == 13)
+	{
+		chat();
+	}
+}
+function f()
+{
+	document.getElementById('text').focus();
+}
+var xmlhttp;
+function replacep(str)
+{
+    str = str.replace(/\+/g,"%2b");
+    str = str.replace(/([\da-zA-Z]+)([\u4E00-\u9FA3])/,"$1"+"%20"+"$2");
+    return str;
+}
+function chat()
+{
+var reg=(/[\u4e00-\u9fa5]/);
+document.getElementById('result').innerHTML+="<div class=\"demouser\">你: "+document.getElementById('text').value+"</div>";
+document.getElementById('btn').disabled=true;
+document.getElementById('btn').value="请稍后……";
+var chat = document.getElementById('text').value;
+$.ajax({
+		     url:"./web.php",
+		     dataType: 'jsonp', // Notice! JSONP <-- P (lowercase)
+		     data: {para:chat},
+		});
+
+
+		}
+		
+function test(res)
+{
+	document.getElementById('text').value="";
+	document.getElementById('result').innerHTML+="<div class=\"demobot\">小青: "+res+"</div>";
+			document.getElementById('result').scrollTop=document.getElementById('result').scrollHeight ;
+	document.getElementById('btn').disabled=false;
+		document.getElementById('btn').value="发送";
+		f();
+		
+}
+
+</script>
+</div>
+
+<div style="display:none;">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F990841e6c18520ad783a7e87b8ca8829' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+<a href="http://robot.youngt.com" target="_blank">青团网客服机器人</a>
+</body>
+</html>

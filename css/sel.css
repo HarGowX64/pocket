@@ -1,0 +1,73 @@
+/** 选择学院 **/
+#selection li {
+	background-color : #fff;
+	outline : 1px solid #ddd;
+	display : inline-block;
+	font-size : 12px;
+	line-height : 35px;
+	margin-top : 15px;
+	text-align : center;
+	width : 30%;
+}
+#selection li:nth-child(3n+1) {
+	margin-left : 2%;
+}
+#selection li:nth-child(3n+2) {
+	margin-left : 3%;
+	margin-right : 3%;
+}
+#selection a {
+	color : #000;
+	display : block;
+}
+
+#selection p {
+	text-align : center;
+	font-weight : bold;
+}
+
+#selection li {
+	position : relative;
+	-webkit-transition : .4s;
+	transition : .4s;
+}
+
+#selection .actived{
+	outline-color : rgb(187,29,72);
+	background : rgb(187,29,72);
+	color : #fff;
+}
+
+#next-btn {
+	display : none;
+	border : ;
+	width : 120px;
+	line-height: 25px;
+	border: 2px solid rgb(21,153,42);
+	color: rgb(21,153,42);
+	text-align : center;
+	margin : 30px auto 0;
+	font-family : "微软雅黑";
+}
+
+#selection select {
+	margin : 15px auto 0;
+	display : block;
+	width : 80%;
+	height : 30px;
+}
+
+#sel-result{
+	margin : 30px auto 0;
+	width : 80%;
+}
+
+#sel-result p{
+	text-align : left;
+}
+#sel-result div{
+	text-indent : 1em;
+	font-size : 13px;
+	line-height : 20px;
+	margin-top : 10px;
+}
