@@ -13,9 +13,9 @@
 
 <section>
 	<nav id = "nav" class = "clearfix">
-		<a href = "<?php echo Yii::app()->request->baseUrl; ?>/appd/activities" ><span>活动</span></a>
-		<a class="current" ><span>可申请</span></a>
-		<a href = "<?php echo Yii::app()->request->baseUrl; ?>/appd/organizations" ><span>机构协会</span></a>
+		<a href = "{$createUrl(app/activities)}"><span>活动</span></a>
+		<a  class="current" ><span>可申请</span></a>
+		<a href = "{$createUrl(app/organizations)}" ><span>机构协会</span></a>
 	</nav>
 	
 	<div class = "flexbox" style="margin:0 10px 10px;" >

@@ -31,6 +31,10 @@ class TagsAction extends CAction{
       * 是否使用{$createUrl(game/test)}标签
       */
      public $useCreateUrl = true;
+     /**
+      * 是否使用{$pageTitle}标签
+      */
+     public $usePageTitle = true;
 //     /**
 //      * 是否使用<n:sidebar></n:sidebar>标签
 //      */
@@ -58,6 +62,7 @@ class TagsAction extends CAction{
          if($this->useLinkTag) $this->tags['nlink'] = '/\<n\:link\>(?<name>[^<]+)\<\/n\:link\>/';
          if($this->useScriptTag) $this->tags['nscript'] = '/\<n\:script>(?<name>[^<]+)\<\/n\:script>/';
          if($this->useCreateUrl) $this->tags["createUrl"] = '/\{\$createUrl\(([^}]+)\)\}/';
+         if($this->usePageTitle) $this->tags["pageTitle"] = '/\{\$pageTitle\}/';
      }
      /**
       * 自定义标签
@@ -120,6 +125,12 @@ class TagsAction extends CAction{
         $baseUrl = Yii::app()->request->baseUrl;
         return $baseUrl;
      }
+     
+     public function tagPageTitle(){
+        $title = $this->controller->pageTitle;
+        return $title;
+     }
+     
      /**
       * 相当于用{$createUrl(site/login)}标签替代Yii::app()->createUrl()
       */

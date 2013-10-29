@@ -13,7 +13,9 @@
                        
         ?>
 
-	<a class = "rarr" href = "<?php echo Yii::app()->request->baseUrl; ?>/index.php/appd/bus_p/id/<?php echo $d['id'];?>" >
+	
+        <a class = "rarr" href = "{$createUrl(app/bus_p?id=$id)}" >
+      
 		<span class = "number" ><strong ><?php echo $d['road'];?>路</strong></span>
 		<span class = "info span1" >
                         <span><?php echo $stops[0];?>&rarr;<?php echo $stops[count($stops)-1];?></span>

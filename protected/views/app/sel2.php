@@ -32,9 +32,9 @@
 		<div><?php echo $departments[$_GET['department']];?>&nbsp;&nbsp;<span></span></div>
 	</div>
 </form>
-<div><a id = "next-btn" href = "<?php echo Yii::app()->request->baseUrl . '/appd/timetable_p/id'; ?>" >决定</a></div>
+<div><a id = "next-btn" href = "{$createUrl(app/timetable_p?id=)}" >决定</a></div>
 
-<script src = "<?php echo yii::app()->request->baseUrl;?>/js/control.js" ></script>
+
 <script>
 	sel2( "<?php echo $_GET['department'];?>" );
 </script>

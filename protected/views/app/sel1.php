@@ -13,15 +13,21 @@
 <div id = "selection" >
 	<p>请告诉小U，你是蛋黄派，还是草莓派？</p>
 	<ul>
-            <?php foreach($departments as $key=>$d): ?><li><?php echo $d;?><input type="radio" name="colleges" value="<?php echo $key;?>" style="display:none;"></li><?php
+            <?php foreach($departments as $key=>$d): ?>
+				<li>
+					<?php echo $d;?>
+					<input type="radio" name="colleges" value="<?php echo $key;?>" style="display:none;"/>
+				</li>
+			<?php
                 endforeach;
             ?>
 	</ul>
 </div>
-<div><a id = "next-btn" href = "<?php echo Yii::app()->request->baseUrl; ?>/appd/sel2/department" >下一步</a></div>
+<div>
+	<a id = "next-btn" href = "{$createUrl(app/sel2?department=)}" >下一步</a>
+</div>
 
 
-<script src = "<?php echo yii::app()->request->baseUrl;?>/js/control.js" ></script>
 <script>
 	sel1();
 </script>

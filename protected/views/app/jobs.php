@@ -66,7 +66,7 @@
 		<h2>本周发布<i class="alarm"></i></h2>
 		<ul>
 			<li>
-				<a href = "<?php echo Yii::app()->request->baseUrl; ?>/appd/jobs_p">中国石油化工有限公司招聘</a>
+				<a href = "{$createUrl(app/jobs_p)}">中国石油化工有限公司招聘</a>
 				<span>10/16</span>
 			</li>
 			<li>

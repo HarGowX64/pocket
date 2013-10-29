@@ -147,7 +147,7 @@ function mark() {
 			cur = {},
 			className = "actived",
 			btn = document.getElementById( "next-btn" ),
-			l = btn.getAttribute( "href" )+"/",
+			l = btn.getAttribute( "href" ),
 			value = 0,
 			name = "";
 		
@@ -194,7 +194,7 @@ function mark() {
 			btn = document.getElementById( "next-btn" );
 			span = document.querySelectorAll( "#sel-result span" ),
 			v = 0,
-            href = btn.getAttribute( 'href' ) + '/' + department + '.2013-2014.',
+            href = btn.getAttribute( 'href' ) + department + '.2013-2014.',
 			index = 0,
 			majorName = "";
 			

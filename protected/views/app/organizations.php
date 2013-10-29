@@ -12,9 +12,9 @@
 ?>
 
 <nav id = "nav" class = "clearfix">
-	<a href = "<?php echo Yii::app()->request->baseUrl; ?>/appd/activities" ><span>活动</span></a>
-	<a href = "<?php echo Yii::app()->request->baseUrl; ?>/appd/apply" ><span>可申请</span></a>
-	<a class="current" ><span>机构协会</span></a>
+	<a  href = "{$createUrl(app/activities)}"><span>活动</span></a>
+	<a href = "{$createUrl(app/apply)}" ><span>可申请</span></a>
+	<a class="current"><span>机构协会</span></a>
 </nav>
 
 	<ul id = "category-bar" >
@@ -29,7 +29,7 @@
                                 $org_con2 =  file_get_contents($org.$ds.$key.$ds.'set.set');
                                 $orgs2 = explode(';', $org_con2);
                                 foreach($orgs2 as $key2=>$o2):
-                           ?><li><a href = "<?php echo Yii::app()->request->baseUrl; ?>/appd/organizations_p/id/<?php echo $key.'.'.$key2; ?>" ><?php echo $o2;?></a></li><?php
+                           ?><li><a href = "{$createUrl(/app/organizations_p?id=)}<?php echo $key.'.'.$key2; ?>" ><?php echo $o2;?></a></li><?php
                                 endforeach;
                             ?>         
 			</ul>

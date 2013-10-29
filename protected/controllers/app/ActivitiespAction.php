@@ -10,12 +10,12 @@
  *
  * @author Administrator
  */
-class IndexAction extends StageAction{
+class ActivitiespAction extends StageAction{
     //put your code here
     
     public function run() {
 //        var_dump($this->tags);
-        $this->controller->render('index');
+        $this->controller->render('activities_p');
     }
 }
 

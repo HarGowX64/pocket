@@ -8,7 +8,22 @@ class AppController extends NController {
     public function actions() {
         return array(
             'index'=>'application.controllers.app.IndexAction',
-            
+            'activities'=>'application.controllers.app.ActivitiesAction',
+            'activities_p'=>'application.controllers.app.ActivitiespAction',
+            'robot'=>'application.controllers.app.RobotAction',
+            'take_out'=>'application.controllers.app.TakeoutAction',
+            'take_out_p'=>'application.controllers.app.TakeoutpAction',
+            'bus'=>'application.controllers.app.BusAction',
+            'bus_p'=>'application.controllers.app.BuspAction',
+            'sel1'=>'application.controllers.app.Sel1Action',
+            'sel2'=>'application.controllers.app.Sel2Action',
+            'timetable_p'=>'application.controllers.app.TimetablepAction',
+            'about'=>'application.controllers.app.AboutAction',
+            'jobs'=>'application.controllers.app.JobsAction',
+            'jobs_p'=>'application.controllers.app.JobspAction',
+            'apply'=>'application.controllers.app.ApplyAction',
+            'organizations'=>'application.controllers.app.OrganizationsAction',
+            'organizations_p'=>'application.controllers.app.OrganizationspAction',
         );
     }
 
@@ -32,81 +47,5 @@ class AppController extends NController {
     }
 
 
-
-    public function actionBus() {
-        $model = new CActiveDataProvider('Bus');
-        $this->render("bus", array(
-            'model' => $model,
-        ));
-    }
-
-    public function actionBus_p() {
-        $model = Bus::model()->findbyPk($_GET['id']);
-        $this->render("bus_p", array(
-            'model' => $model,
-        ));
-    }
-
-    public function actionTake_out() {
-        $dataprovider = new CActiveDataProvider('Takeout');
-        $this->render("take_out", array(
-            'dataprovider' => $dataprovider,
-        ));
-    }
-
-    public function actionTake_out_p() {
-        $model = Takeout::model()->findbyPk($_GET['id']);
-        $this->render("take_out_p", array(
-            'model' => $model,
-        ));
-    }
-
-    public function actionOrganizations() {
-        $this->render("organizations");
-    }
-
-    public function actionOrganizations_p() {
-        $this->render("organizations_p");
-    }
-
-    public function actionAbout() {
-        $this->render("about");
-    }
-
-    public function actionTimetable_p() {
-        $this->render("timetable_p");
-    }
-
-    public function actionSel1() {
-        $this->render("sel1");
-    }
-
-    public function actionSel2() {
-        $this->render("sel2");
-    }
-
-    public function actionRobot() {
-        $this->render("robot");
-    }
-
-    public function actionJobs() {
-        $this->render("jobs");
-    }
-
-    public function actionJobs_p() {
-        $this->render("jobs_p");
-    }
-
-    public function actionActivities() {
-        $this->render("activities");
-    }
-
-    public function actionActivities_p() {
-        $this->render("activities_p");
-    }
-
-    public function actionApply() {
-        $this->render("apply");
-    }
 
 }

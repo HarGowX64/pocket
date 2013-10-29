@@ -6,8 +6,8 @@
 
 <nav id = "nav" class = "clearfix">
 	<a class="current" ><span>活动</span></a>
-	<a href = "<?php echo Yii::app()->request->baseUrl; ?>/appd/apply" ><span>可申请</span></a>
-	<a href = "<?php echo Yii::app()->request->baseUrl; ?>/appd/organizations" ><span>机构协会</span></a>
+	<a href = "{$createUrl(app/apply)}" ><span>可申请</span></a>
+	<a href = "{$createUrl(app/apply)}" ><span>机构协会</span></a>
 </nav>
 
 <div class = "flexbox" style="margin:0 10px 10px;" >
@@ -53,23 +53,23 @@
 		<h2>本周发布<i class="alarm"></i></h2>
 		<ul>
 			<li>
-				<a href = "<?php echo Yii::app()->request->baseUrl; ?>/appd/activities_p">广东石油化工首届编程交流会</a>				
+				<a href = "{$createUrl(app/activities_p)}">广东石油化工首届编程交流会</a>				
 				<span>10/16</span>
 			</li>
 			<li>
-				<a href = "<?php echo Yii::app()->request->baseUrl; ?>/appd/activities_p">广东石油化工首届编程交流会</a>				
+				<a href = "{$createUrl(app/activities_p)}">广东石油化工首届编程交流会</a>				
 				<span>10/15</span>
 			</li>
 			<li>
-				<a href = "<?php echo Yii::app()->request->baseUrl; ?>/appd/activities_p">广东石油化工首届编程交流会</a>				
+				<a href = "{$createUrl(app/activities_p)}">广东石油化工首届编程交流会</a>				
 				<span>10/15</span>
 			</li>
 			<li>
-				<a href = "<?php echo Yii::app()->request->baseUrl; ?>/appd/activities_p">广东石油化工首届编程交流会</a>				
+				<a href = "{$createUrl(app/activities_p)}">广东石油化工首届编程交流会</a>				
 				<span>10/12</span>
 			</li>
 			<li>
-				<a href = "<?php echo Yii::app()->request->baseUrl; ?>/appd/activities_p">广东石油化工首届编程交流会</a>				
+				<a href = "{$createUrl(app/activities_p)}">广东石油化工首届编程交流会</a>				
 				<span>10/12</span>
 			</li>
 		</ul>
@@ -79,15 +79,15 @@
 		<h2>上周发布<i class="alarm"></i></h2>
 		<ul>
 			<li>
-				<a href = "<?php echo Yii::app()->request->baseUrl; ?>/appd/activities_p">广东石油化工首届编程交流会</a>				
+				<a href = "{$createUrl(app/activities_p)}">广东石油化工首届编程交流会</a>				
 				<span>10/10</span>
 			</li>
 			<li>
-				<a href = "<?php echo Yii::app()->request->baseUrl; ?>/appd/activities_p">广东石油化工首届编程交流会</a>				
+				<a href = "{$createUrl(app/activities_p)}">广东石油化工首届编程交流会</a>				
 				<span>10/08</span>
 			</li>
 			<li>
-				<a href = "<?php echo Yii::app()->request->baseUrl; ?>/appd/activities_p">广东石油化工首届编程交流会</a>				
+				<a href = "{$createUrl(app/activities_p)}">广东石油化工首届编程交流会</a>				
 				<span>10/06</span>
 			</li>
 		</ul>
@@ -97,23 +97,23 @@
 		<h2>更早<i class="alarm"></i></h2>
 		<ul>
 			<li>
-				<a href = "<?php echo Yii::app()->request->baseUrl; ?>/appd/activities_p">广东石油化工首届编程交流会</a>				
+				<a href = "{$createUrl(app/activities_p)}">广东石油化工首届编程交流会</a>				
 				<span>10/4</span>
 			</li>
 			<li>
-				<a href = "<?php echo Yii::app()->request->baseUrl; ?>/appd/activities_p">广东石油化工首届编程交流会</a>				
+				<a href = "{$createUrl(app/activities_p)}">广东石油化工首届编程交流会</a>				
 				<span>10/4</span>
 			</li>
 			<li>
-				<a href = "<?php echo Yii::app()->request->baseUrl; ?>/appd/activities_p">广东石油化工首届编程交流会</a>				
+				<a href = "{$createUrl(app/activities_p)}">广东石油化工首届编程交流会</a>				
 				<span>10/4</span>
 			</li>
 			<li>
-				<a href = "<?php echo Yii::app()->request->baseUrl; ?>/appd/activities_p">广东石油化工首届编程交流会</a>				
+				<a href = "{$createUrl(app/activities_p)}">广东石油化工首届编程交流会</a>				
 				<span>10/4</span>
 			</li>
 			<li>
-				<a href = "<?php echo Yii::app()->request->baseUrl; ?>/appd/activities_p">广东石油化工首届编程交流会</a>				
+				<a href = "{$createUrl(app/activities_p)}">广东石油化工首届编程交流会</a>				
 				<span>10/4</span>
 			</li>
 		</ul>

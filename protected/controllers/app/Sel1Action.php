@@ -10,12 +10,15 @@
  *
  * @author Administrator
  */
-class IndexAction extends StageAction{
+class Sel1Action extends StageAction{
     //put your code here
     
     public function run() {
 //        var_dump($this->tags);
-        $this->controller->render('index');
+        $this->controller->render("sel1", array(
+            
+        ));
+        
     }
 }
 

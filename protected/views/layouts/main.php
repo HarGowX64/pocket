@@ -76,28 +76,29 @@
             "baseUrl":"{baseUrl}/css/",
             "layout":["main"],
             "action":{
-                "take_out_p":["take_out_p"],
-		"robot":["robot"],
-		"about":["about"],
-		"timetable_p":["timetable"],
-		"sel1":["sel"],
-		"sel2":["sel"],
-		"bus":["bus"],
-		"take_out":["take_out"],
-		"organizations":["organizations"],
-		"organizations_p":["organizations"],
-		"jobs":["jobs"],
-		"jobs_p":["jobs_p"],
-		"activities":["jobs"],
-		"activities_p":["jobs_p"],
-		"apply" : [ "apply"],
-                "take_out_p":["take_out_p"],
-                "take_out_p":["take_out_p"],
-                "index":["index"],
-                "bus_p":["bus_p"]
-            }
+				"take_out_p":["take_out_p,"],
+				"robot":["robot"],
+				"about":["about"],
+				"timetable":["timetable_p"],
+				"sel":["sel1","sel2"],
+				"bus":["bus"],
+				"take_out":["take_out"],
+				"organizations":["organizations","organizations_p"],
+				"jobs":["jobs","activities"],
+				"jobs_p":["jobs_p","activities_p"],
+				"apply":[ "apply"],
+				
+				"index":["index"],
+				"bus_p":["bus_p"]
+			}
         }
     </n:link>
+	<n:script>
+		{
+			"baseUrl":"{baseUrl}/js/",
+            "layout":["lib","control"]
+		}
+	</n:script>
     
 -->
 
@@ -107,9 +108,9 @@
 	<meta charset = "utf-8" >
 	<meta name = "viewport" content = "width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" >
 	
-	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+	<title>{$pageTitle}</title>
 	
-	<script src = "<?php echo yii::app()->request->baseUrl;?>/js/lib.js" ></script>
+
 </head>
 
 <body>
